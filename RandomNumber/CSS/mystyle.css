@@ -1,0 +1,44 @@
+ /*
+    Meet Patel.
+    October 11, 2019
+    This is a css file which implements the design of the index.html 
+*/
+
+#details {
+    margin: 10% 30% 20% 30%;
+}
+
+body {
+    height: 100%;
+    width:100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  
+
+#background {
+    background-image: url("Images/spinwheel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#winner {
+    font-size: 2em;
+    text-align: center;
+}
+
+#spinButton, #resetButton, #submitbutton {
+    padding: 10;
+    font-size: 1.5em;
+}
+  
+h1 {
+    text-align: center;
+}
+
+#game {
+    visibility: hidden;
+    margin: 10% 30% 20% 30%;
+}

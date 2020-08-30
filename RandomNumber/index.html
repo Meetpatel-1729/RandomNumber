@@ -1,0 +1,64 @@
+<!-- 
+    Meet Patel
+    October 11, 2019
+    This is a html file which ask the user to enter their name, 
+    date of birth and favourite color and on submitting it generates a small game 
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+        <script src="JavaScript/game.js">
+        </script>
+    </head>
+    <body>
+        <div id= "background">
+            <div id = "details">
+                <h1>Please enter your details</h1>
+                <form id="detailsform">
+                    Name: &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="name" placeholder="Your Name" required><br><br>
+
+                    Your Date of Birth: &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="date" id="datepicker" name="birthdate" required><br><br>
+
+                    Your favourite colour: 
+                    <input type="color" id="favcolour" name="favcolour"><br> <br>
+
+                    <center>
+                        <input type="submit" id="submitbutton" name="Submit">
+                    </center>
+                </form>
+            </div>
+
+            <div id="game">
+                <form id="gameForm">
+                    <h1 id="enteredName"></h1><br>
+
+                    Your Score: 
+                    <input type="text" id="value1" readonly><br><br>
+
+                    Computer Score:
+                    <input type="text" id="value2" readonly><br><br>
+                    <center>
+                            <input type="button" id="spinButton" value="Spin">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- 
+                                reset the game 
+                                onclick method reference Link: https://www.w3schools.com/jsref/met_his_go.asp
+                            -->
+                            <input type="button" id="resetButton" value="Reset" onclick="javascript:history.go(0)">
+                    </center>
+                   
+                    <input type="button" id="helpButton" value="Help">
+                    <p id="helpMessage"></p><br>
+                    <p id="winner"></p><br>
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>
